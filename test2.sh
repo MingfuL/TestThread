@@ -86,11 +86,11 @@ echo "======================END 获取到branchName=============="
 
 echo "======================BEGIN 回桌面创建文件夹=============="
 
-cd '/Users/liuxiaoming/Desktop'
+cd '/Users/cestbon/Desktop'
 echo "获得的目标地址是：$(pwd)"
 
 #创建主文件夹
-sourceDir='SaleHelperApk'
+sourceDir='TestApk'
 if [ ! -d "$sourceDir" ];then
 	mkdir $sourceDir
 else
@@ -129,6 +129,7 @@ echo "======================END 回桌面创建文件夹=============="
 
 echo "======================BEGIN 进入目标路径进行复制=============="
 cd ~
-cp -r -f /Users/liuxiaoming/practiseCode/android/TestThread/app/build/outputs/apk "/Users/liuxiaoming/Desktop/SaleHelperApk/${branchName}/${time}"
+cpSourceDir='/Users/cestbon/.jenkins/workspace/app/build/outputs/apk'
+cp -r -f "${cpSourceDir}" "/Users/cestbon/Desktop/SaleHelperApk/${branchName}/${time}"
 echo "======================END 进入目标路径进行复制=============="
 
