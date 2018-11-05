@@ -129,7 +129,7 @@ echo "======================END 回桌面创建文件夹=============="
 
 echo "======================BEGIN 进入目标路径进行复制=============="
 cd ~
-cpSourceDir='/Users/cestbon/.jenkins/workspace/app/build/outputs/apk'
-cp -r -f "${cpSourceDir}" "/Users/cestbon/Desktop/SaleHelperApk/${branchName}/${time}"
+cpSourceDir='/Users/cestbon/.jenkins/workspace/TestShell/app/build/outputs/apk'
+cp -r -f "${cpSourceDir}" "/Users/cestbon/Desktop/TestApk/${branchName}/${time}"
 echo "======================END 进入目标路径进行复制=============="
 
